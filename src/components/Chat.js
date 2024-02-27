@@ -12,7 +12,7 @@ import {
 
 import "../styles/Chat.css";
 
-export const Chat = ({ room }) => {
+export const Chat = ({ room, username }) => {
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
   const messagesRef = collection(db, "messages");
